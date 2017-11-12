@@ -26,11 +26,6 @@
       "matches": ["*://*.ii.uj.edu.pl/*"],
       "js": ["js/characters_fix.js"],
       "run_at": "document_idle"
-    },
-    {
-      "matches": ["*://*.ii.uj.edu.pl/*"],
-      "js": ["js/hide_footer.js"],
-      "run_at": "document_idle"
     }
   ]
 }
