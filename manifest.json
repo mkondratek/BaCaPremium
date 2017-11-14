@@ -18,13 +18,12 @@
   "content_scripts": [
     {
       "matches": ["*://*.ii.uj.edu.pl/*"],
-      "js": ["js/general.js"],
-      "run_at": "document_end",
-      "css": ["css/general.css"]
+      "css": ["css/general.css"],
+      "run_at": "document_start"
     },
     {
       "matches": ["*://*.ii.uj.edu.pl/*"],
-      "js": ["js/characters_fix.js"],
+      "js": ["js/characters_fix.js", "js/general.js"],
       "run_at": "document_idle"
     }
   ]
