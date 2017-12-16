@@ -1,6 +1,6 @@
 {
   "name": "baca-premium",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Web browser extension improving usability of BaCa checker system.",
   "main": "index.js",
   "scripts": {
