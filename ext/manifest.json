@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "BaCaPremium",
+  "version": "0.10.12.2017",
+
+  "description": "Improves usability of BaCa testing system.",
+
+  "icons": {
+    "48": "images/ico48.png",
+    "96": "images/ico96.png"
+  },
+
+  "page_action": {
+    "default_icon": "images/ico96.png",
+    "default_title": "BaCaPremium"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.ii.uj.edu.pl/*"],
+      "css": ["css/general.css"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://*.ii.uj.edu.pl/*"],
+      "js": ["js/characters_fix.js", "js/general.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

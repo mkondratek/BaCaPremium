@@ -1,0 +1,21 @@
+.info {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgba(200,200,200,0.20);
+    box-sizing: border-box;
+    border: rgba(0,0,0,0.50) dashed 2px;
+    text-align: center;
+    color: red;
+    height: 3.85em;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.testerka-srodek {
+    margin: 5px 20px 0 20px;
+}
+
+.testerka-footer {
+    display: none;
+}
