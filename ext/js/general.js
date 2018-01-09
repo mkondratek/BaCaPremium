@@ -2,7 +2,7 @@
 /* global variables */
 var __current_href = window.location.href;
 var __isuptodate = false;
-var __needing_char_fix = '(ProblemStatistics|ResultsPanel)';
+var __needing_char_fix = '(ProblemStatistics|ResultsPanel|SubmitDetails)';
 /*  ^ ^ ^ ^ ^ ^ ^   */
 
 function makeInfo() {
@@ -33,6 +33,11 @@ $(document).click( function () {
     __isuptodate = false;
     setTimeout(waitForInit, 100);
 });
+
+window.onhashchange = function () {
+    __isuptodate = false;
+    setTimeout(waitForInit, 100);
+};
 
 $(document).ready( function() {
     waitForInit();
