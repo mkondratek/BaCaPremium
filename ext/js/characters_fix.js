@@ -2,11 +2,11 @@ var are_fixed = false;
 
 function charFix(item, from_str, to_str) {
     if (__current_href.match(__needing_char_fix) === null) {
-        console.log('cf: location changed to ' + __current_href);
+        //console.log('cf: location changed to ' + __current_href);
     }
 
     if (item.innerHTML.match(to_str) !== null) {
-        console.log('cf: match of "' + to_str + '" found in " ' + item.innerHTML);
+        //console.log('cf: match of "' + to_str + '" found in " ' + item.innerHTML);
     }
 
     are_fixed = (are_fixed || __current_href.match(__needing_char_fix) === null);
@@ -15,7 +15,7 @@ function charFix(item, from_str, to_str) {
 }
 
 function fixThemAll() {
-    console.log('fixThemAll()');
+    //console.log('fixThemAll()');
 
     are_fixed = false;
     var items = $('.testerka-table tr');
@@ -27,6 +27,7 @@ function fixThemAll() {
         charFix(items[i], 'wyj..cia', 'wyjścia');
         charFix(items[i], 'b....d', 'błąd');
         charFix(items[i], 'z..a odpowied.', 'zła odpowiedź');
+        charFix(items[i], 'wewn..trzny', 'wewnętrzny');
     }
 
     if (!are_fixed) {

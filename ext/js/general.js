@@ -24,6 +24,9 @@ function init() {
         if (__current_href.match(__needing_char_fix) !== null) {
             setTimeout(fixThemAll, 50);
         }
+        if (__current_href.match("SubmitDetails") !== null) {
+            setTimeout(hideLogs, 50);
+        }
 
         __isuptodate = true;
     }

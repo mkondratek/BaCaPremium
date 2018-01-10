@@ -23,7 +23,7 @@
     },
     {
       "matches": ["*://*.ii.uj.edu.pl/*"],
-      "js": ["js/jquery-3.2.1.min.js", "js/characters_fix.js", "js/general.js"],
+      "js": ["js/jquery-3.2.1.min.js", "js/characters_fix.js", "js/hide_logs.js", "js/general.js"],
       "run_at": "document_idle"
     }
   ]
