@@ -2,6 +2,7 @@
 /* global variables */
 var __current_href = window.location.href;
 var __isuptodate = false;
+var __is_sum_set = false;
 var __needing_char_fix = '(ProblemStatistics|ResultsPanel|SubmitDetails)';
 /*  ^ ^ ^ ^ ^ ^ ^   */
 
@@ -29,6 +30,11 @@ function init() {
         }
 
         __isuptodate = true;
+    }
+
+    if( !__is_sum_set && __current_href.match("MyPoint") !== null ) {
+        setTimeout(sumPoints, 50);
+        __is_sum_set = true;
     }
 }
 

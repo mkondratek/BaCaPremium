@@ -1,7 +1,7 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "BaCaPremium",
-  "version": "0.01.01.2018",
+  "version": "0.26.01.2018",
 
   "description": "Improves usability of BaCa testing system.",
 
@@ -23,7 +23,7 @@
     },
     {
       "matches": ["*://*.ii.uj.edu.pl/*"],
-      "js": ["js/jquery-3.2.1.min.js", "js/characters_fix.js", "js/hide_logs.js", "js/general.js"],
+      "js": ["js/jquery-3.2.1.min.js", "js/characters_fix.js", "js/hide_logs.js", "js/general.js", "js/sum_points.js"],
       "run_at": "document_idle"
     }
   ]
