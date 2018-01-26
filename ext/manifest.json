@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "BaCaPremium",
   "version": "0.26.01.2018",
 
@@ -18,13 +18,17 @@
   "content_scripts": [
     {
       "matches": ["*://*.ii.uj.edu.pl/*"],
-      "css": ["css/general.css"],
+      "css": ["css/general.css", "css/materialize.css"],
       "run_at": "document_start"
     },
     {
       "matches": ["*://*.ii.uj.edu.pl/*"],
-      "js": ["js/jquery-3.2.1.min.js", "js/characters_fix.js", "js/hide_logs.js", "js/general.js", "js/sum_points.js"],
+      "js": ["js/jquery-3.2.1.min.js", "js/characters_fix.js", "js/hide_logs.js", "js/general.js", "js/sum_points.js", "js/materialize.js"],
       "run_at": "document_idle"
     }
+  ],
+
+  "web_accessible_resources": [
+    "fonts/*"
   ]
 }

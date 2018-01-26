@@ -1,7 +1,7 @@
 function sumPoints() {
-	var points_div = "body > div.testerka > table.testerka-srodek > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(2) > td > table > tbody:nth-child(1) > tr:nth-child(2) > td > table";
-	var points_table = "body > div.testerka > table.testerka-srodek > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(2) > td > table > tbody:nth-child(2)";
-	var your_sum_td = "body > div.testerka > table.testerka-srodek > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(2) > td > table > tbody:nth-child(4) > tr > td:nth-child(2)";
+	var points_div = "body > div.card-panel.light-green.lighten-4 > table.testerka-srodek > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(2) > td > table > tbody:nth-child(1) > tr:nth-child(2) > td > table";
+	var points_table = "body > div.card-panel.light-green.lighten-4 > table.testerka-srodek > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(2) > td > table > tbody:nth-child(2)";
+	var your_sum_td = "body > div.card-panel.light-green.lighten-4 > table.testerka-srodek > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(2) > td > table > tbody:nth-child(4) > tr > td:nth-child(2)";
 	var your_sum = 0;
 	var max_sum = 0;
 

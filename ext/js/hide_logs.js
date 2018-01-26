@@ -1,5 +1,5 @@
 function hideLogs() {
-    var logs_div = "body > div.testerka > table.testerka-srodek > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(10) > td";
+    var logs_div = "body > div.card-panel.light-green.lighten-4 > table.testerka-srodek > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(10) > td";
     
     if ($("#logs_button").length === 0) {
         var button = document.createElement("button");

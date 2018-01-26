@@ -7,15 +7,41 @@
     /*border: rgba(0,0,0,0.50) dashed 2px;*/
     text-align: center;
     color: red;
-    height: 3.85em;
-    font-size: 1em;
-    padding: 0.5em;
+    height: 0em;
+    font-size: 0em;
+    padding: 0.0em;
+}
+
+.testerka-header {
+    display: none;
 }
 
 .testerka-srodek {
     margin: 5px 20px 0 20px;
+    font-size: 50px;
 }
 
 .testerka-footer {
     display: none;
+}
+
+.testerka-menu {
+    display: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+@font-face {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: 400;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/roboto/Roboto-Medium.woff') format('woff');
 }
