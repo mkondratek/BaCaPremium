@@ -29,10 +29,16 @@
     display: none;
 }
 
+.testerka-th td {
+    background-color: #b0bec5;
+    font-weight: bold;
+}
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: roboto;
 }
 
 main {
