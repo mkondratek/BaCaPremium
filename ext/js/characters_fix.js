@@ -18,7 +18,8 @@ function fixThemAll() {
     //console.log('fixThemAll()');
 
     are_fixed = false;
-    var items = $('.testerka-table tr');
+    // var items = $('.testerka-table tr');
+    var items = $('.bordered tr');
 
     for (var i = 0; i < items.length; i++) {
         charFix(items[i], 'b....d', 'błąd');
@@ -29,6 +30,19 @@ function fixThemAll() {
         charFix(items[i], 'z..a odpowied.', 'zła odpowiedź');
         charFix(items[i], 'wewn..trzny', 'wewnętrzny');
     }
+
+    // items = $('.bordered');
+    // console.log(items.length);
+
+    // for (var i = 0; i < items.length; i++) {
+    //     charFix(items[i], 'b....d', 'błąd');
+    //     charFix(items[i], 'nag....wka', 'nagłówka');
+    //     charFix(items[i], 'b....d', 'błąd');
+    //     charFix(items[i], 'wyj..cia', 'wyjścia');
+    //     charFix(items[i], 'b....d', 'błąd');
+    //     charFix(items[i], 'z..a odpowied.', 'zła odpowiedź');
+    //     charFix(items[i], 'wewn..trzny', 'wewnętrzny');
+    // }
 
     if (!are_fixed) {
         setTimeout(fixThemAll, 50);
