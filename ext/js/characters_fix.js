@@ -15,7 +15,6 @@ function charFix(item, from_str, to_str) {
 }
 
 function fixThemAll() {
-    //console.log('fixThemAll()');
 
     are_fixed = false;
     // var items = $('.testerka-table tr');

@@ -20,7 +20,6 @@ function setInfo() {
 
 function init() {
     if (!__isuptodate) {
-        // console.log(new Date().toString());
         __current_href = window.location.href;
         setInfo();
 
@@ -72,6 +71,7 @@ function makeHeader() {
                         <li><a class=\"grey-text text-lighten-3\" href=\"#MyPoint\">MOJE PUNKTY</a></li>\
                         <li><a class=\"grey-text text-lighten-3\" href=\"#SettingsPanel\">USTAWIENIA</a></li>\
                         <li><a class=\"grey-text text-lighten-3\" href=\"#ChangePassword\">ZMIANA HASŁA</a></li>\
+                        <li><a class=\"grey-text text-lighten-3\" href=\"#LoginPanel\">ZALOGUJ</a></li>\
                         <li><a class=\"grey-text text-lighten-3\" href=\"#LogoutPanel\">WYLOGUJ</a></li>\
                       </ul>\
                     </div>";
@@ -96,7 +96,6 @@ function waitForInit() {
     if ( $('.testerka').length !== 0 || $('.card-panel').length !== 0 ) {
         init();
     } else {
-        // console.log(new Date().toString());
         setTimeout(waitForInit, 50);
     }
 }
