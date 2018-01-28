@@ -1,10 +1,8 @@
-
 /* global variables */
 var __current_href = window.location.href;
 var __isuptodate = false;
 var __is_sum_set = false;
 var __is_footer = false;
-var __is_highlighted = false;
 var __needing_char_fix = '(ProblemStatistics|ResultsPanel|SubmitDetails)';
 /*  ^ ^ ^ ^ ^ ^ ^   */
 
@@ -29,11 +27,7 @@ function init() {
         }
         if (__current_href.match("SubmitDetails") !== null) {
             setTimeout(hideLogs, 50);
-
-            if( !__is_highlighted ) {
-                setTimeout(codeHighlight, 50);
-                __is_highlighted = true;
-            }
+            setTimeout(codeHighlight, 50);
         }
 
         changeTables();
@@ -61,7 +55,6 @@ $(document).click( function () {
 
 window.onhashchange = function () {
     __isuptodate = false;
-    __is_highlighted = false;
     setTimeout(waitForInit, 100);
 };
 
