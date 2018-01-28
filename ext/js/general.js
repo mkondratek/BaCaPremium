@@ -1,4 +1,3 @@
-
 /* global variables */
 var __current_href = window.location.href;
 var __isuptodate = false;
@@ -28,6 +27,7 @@ function init() {
         }
         if (__current_href.match("SubmitDetails") !== null) {
             setTimeout(hideLogs, 50);
+            setTimeout(codeHighlight, 50);
         }
 
         changeTables();
