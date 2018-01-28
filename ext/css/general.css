@@ -47,9 +47,9 @@ main {
 
 @font-face {
   font-family: roboto;
-  font-style: normal;
-  font-weight: 400;
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/roboto/Roboto-Medium.woff') format('woff');
+  /*font-style: normal;*/
+  /*font-weight: 400;*/
+  /*src: url('chrome-extension://__MSG_@@extension_id__/fonts/roboto/Roboto-Medium.woff') format('woff');*/
 }
 
 /*ue info*/
